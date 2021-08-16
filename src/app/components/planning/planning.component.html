@@ -1,0 +1,93 @@
+<div>
+	<div class="header-scroll">
+		<img class="header-scroll__selector" src="./../../../assets/images/planning/menu.png" />
+		<img class="header-scroll__add" src="./../../../assets/images/planning/add_plan.png" />
+	</div>
+
+	<div class="container">
+		<p class="header__breadcrumb">Главная — Планирование</p>
+
+		<div class="header-planning">
+			<img class="header-planning__img" src="./../../../assets/images/planning/Planning.png" alt="">
+			<p class="header-planning__title">Планирование</p>
+		</div>
+
+		<ul class="header-tabs">
+			<li class="header-tabs_element header-tabs__underline "  *ngFor="let type of data.planningType">{{type}}</li>
+		</ul>
+
+		<div class="filter">
+			<div class="filter-inputs">
+				<div class="filter-inputs-search">
+					<img class="filter-inputs-search__img" src="./../../../assets/images/planning/Search.png" alt="">
+					<input class="filter-inputs-search__input" placeholder="Поиск" type="text">
+				</div>
+
+				<div class="filter-inputs-program">
+					<p class="filter-inputs-program__title">Программа</p>
+					<div class="filter-inputs-program-menu">
+						<p class="filter-inputs-program-menu__title">Все</p>
+						<img src="./../../../assets/images/planning/Expand_More.png" alt="">
+					</div>
+				</div>
+
+				<div class="filter-inputs-period">
+					<p class="filter-inputs-period__title">Период</p>
+					<div class="filter-inputs-period-menu">
+						<p class="filter-inputs-period-menu__title">Июнь 2019</p>
+						<img src="./../../../assets/images/planning/Expand_More.png" alt="">
+					</div>
+				</div>
+
+				<div class="filter-inputs-status">
+					<p class="filter-inputs-status__title">Статус</p>
+					<div class="filter-inputs-status-menu">
+						<p class="filter-inputs-status-menu__title">Все</p>
+						<img src="./../../../assets/images/planning/Expand_More.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="filter-settings">
+				<p class="filter-settings__count-sections">34 сессии</p>
+
+				<div class="filter-settings-tune">
+					<img class="filter-settings-tune__img" src="./../../../assets/images/planning/Scale.png" alt="">
+					<p class="filter-settings-tune__text">Настроить фильтр</p>
+				</div>
+
+				<div class="filter-settings-discard">
+					<img class="filter-settings-discard__img" src="./../../../assets/images/planning/Close.png" alt="">
+					<p class="filter-settings-discard__text">Сбросить</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="list">
+			<ul class="list-title">
+				<li class="list-title__date">Дата начала</li>
+				<li class="list-title__title">Название</li>
+				<li class="list-title__participants">Участников</li>
+				<li class="list-title__trainer">Тренер</li>
+				<li class="list-title-progress">
+					<p class="list-title-progress__title">Прогресс</p>
+					<img class="list-title-progress__img" src="./../../../assets/images/planning/icon.png" alt="">
+				</li>
+			</ul>
+
+			<ul class="list-body">
+				<li class="list-body-plan" *ngFor="let plan of data.plans">
+						<div class="list-body-plan__data">{{plan.date}}</div>
+						<div class="list-body-plan__title">{{plan.title}}</div>
+						<div class="list-body-plan__countusers">{{plan.countusers}}</div>
+						<div class="list-body-plan__trainer">{{plan.trainer}}</div>
+						<div class="list-body-plan__progress">{{plan.progress}}</div>
+						<img class="list-body-plan__options" src="./../../../assets/images/planning/More Vertically.png" alt="">
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+
+</div>

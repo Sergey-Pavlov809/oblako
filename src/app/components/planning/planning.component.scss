@@ -1,0 +1,490 @@
+.header-scroll {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+
+    .header-scroll__selector {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header-scroll__add {
+        margin-right: 24px;
+    }
+
+}
+
+
+.container {
+    width: 1146px;
+    margin-left: 67px;
+    margin-right: 67px;
+    margin-top: 5px;
+
+    .header__breadcrumb {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .header-planning {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+
+        .header-planning__img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .header-planning__title {
+            margin-left: 16px;
+
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 40px;
+        }
+    }
+
+    .header-tabs {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 42px;
+        padding-left: 0px;
+
+        .header-tabs_element {
+            list-style: none;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(0, 0, 0, 0.87);
+
+            margin-right: 24px;
+        }
+
+        .header-tabs__underline {
+            border-bottom: 2px solid currentColor;
+            border-bottom-color: blue;
+            color: rgba(0, 0, 0, 0.54);
+        }
+    }
+
+    .filter {
+        .filter-inputs {
+            width: 166px;
+            height: 66px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .filter-inputs-search {
+                width: 166px;
+                height: 66px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .filter-inputs-search__img {
+                    color: rgba(0, 0, 0, 0.38);
+                    margin-top: 8.33%;
+                    margin-bottom: 10.27%;
+                }
+
+                .filter-inputs-search__input {
+                    border: 0px;
+                    height: 16px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: rgba(0, 0, 0, 0.38);
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+
+            .filter-inputs-program {
+                width: 166px;
+                height: 66px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                .filter-inputs-program__title {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    color: rgba(0, 0, 0, 0.54);
+
+                }
+
+                .filter-inputs-program-menu {
+                    color: rgba(0, 0, 0, 0.87);
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .filter-inputs-program-menu__title {
+                        width: 132px;
+                        height: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgba(0, 0, 0, 0.87);
+                    }
+                }
+            }
+
+            .filter-inputs-program {
+                width: 166px;
+                height: 66px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+                .filter-inputs-program__title {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    color: rgba(0, 0, 0, 0.54);
+
+                }
+
+                .filter-inputs-program-menu {
+                    color: rgba(0, 0, 0, 0.87);
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .filter-inputs-program-menu__title {
+                        width: 132px;
+                        height: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgba(0, 0, 0, 0.87);
+                    }
+                }
+            }
+
+            .filter-inputs-period {
+                width: 166px;
+                height: 66px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 30px;
+
+
+                .filter-inputs-period__title {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    color: rgba(0, 0, 0, 0.54);
+
+                }
+
+                .filter-inputs-period-menu {
+                    color: rgba(0, 0, 0, 0.87);
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .filter-inputs-period-menu__title {
+                        width: 132px;
+                        height: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgba(0, 0, 0, 0.87);
+                    }
+                }
+            }
+
+            .filter-inputs-status {
+                width: 166px;
+                height: 66px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 30px;
+
+
+                .filter-inputs-status__title {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    color: rgba(0, 0, 0, 0.54);
+
+                }
+
+                .filter-inputs-status-menu {
+                    color: rgba(0, 0, 0, 0.87);
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .filter-inputs-status-menu__title {
+                        width: 132px;
+                        height: 16px;
+                        margin-right: 16px;
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                        color: rgba(0, 0, 0, 0.87);
+                    }
+                }
+            }
+        }
+    }
+
+    .filter-settings {
+        width: 444px;
+        height: 36px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .filter-settings__count-sections {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(0, 0, 0, 0.54);
+        }
+
+        .filter-settings-tune {
+            width: 181px;
+            height: 36px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-left: 76px;
+
+            .filter-settings-tune__text {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                color: #1071FF;
+            }
+
+            .filter-settings-tune__img {
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+            }
+        }
+
+        .filter-settings-discard {
+            width: 124px;
+            height: 36px;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+
+            .filter-settings-discard__img {
+                width: 9px;
+                height: 9px;
+                margin-right: 8px;
+
+            }
+
+            .filter-settings-discard__text {
+                color: rgba(0, 0, 0, 0.54);
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .list {
+        width: 1041px;
+        height: 36px;
+        margin-top: 48px;
+
+        ul {
+            list-style: none;
+        }
+
+
+        .list-title {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            color: rgba(0, 0, 0, 0.54);
+
+
+
+            padding-left: 0px;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .list-title__date {
+                width: 86px;
+                height: 36px;
+                margin-right: 24px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+            }
+
+            .list-title__title {
+                width: 546px;
+                height: 36px;
+                margin-right: 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .list-title__participants {
+                width: 104px;
+                height: 36px;
+                margin-right: 32px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .list-title__trainer {
+                width: 100px;
+                height: 36px;
+                margin-right: 32px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .list-title-progress {
+                width: 87px;
+                height: 36px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .list-title-progress__title {
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 0.87);
+                    margin-right: 11px;
+                }
+            }
+        }
+
+        .list-body {
+            padding-left: 0px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            .list-body-plan {
+                width: 1162px;
+                height: 36px;
+
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                color: rgba(0, 0, 0, 0.87);
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .list-body-plan__data {
+                    width: 86px;
+                    height: 36px;
+                    margin-right: 24px;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .list-body-plan__title {
+                    width: 546px;
+                    height: 36px;
+                    margin-right: 30px;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .list-body-plan__countusers {
+                    width: 104px;
+                    height: 36px;
+                    margin-right: 32px;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .list-body-plan__trainer {
+                    width: 100px;
+                    height: 36px;
+                    margin-right: 32px;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .list-body-plan__progress {
+                    width: 87px;
+                    height: 36px;
+					margin-right: 73px;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .list-body-plan__options {
+                    height: 8px;
+					padding: 8px;
+
+                }
+            }
+        }
+    }
+
+
+}
