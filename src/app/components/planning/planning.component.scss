@@ -11,8 +11,31 @@
         height: 40px;
     }
 
+    @media (min-width:361px) {
+        .header-scroll__title {
+            display: none;
+        }
+    }
+
+    .header-scroll__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+
     .header-scroll__add {
         margin-right: 24px;
+    }
+
+}
+
+@media (min-width: 361px) {
+    .container {
+        margin-left: 0px;
+        max-width: 360px;
+		color: red;
     }
 
 }
@@ -29,6 +52,12 @@
         font-size: 12px;
         line-height: 16px;
         color: rgba(0, 0, 0, 0.54);
+    }
+
+    @media (max-width:361px) {
+        .header__breadcrumb {
+            display: none;
+        }
     }
 
     .header-planning {
@@ -48,6 +77,12 @@
             font-weight: bold;
             font-size: 38px;
             line-height: 40px;
+        }
+    }
+
+    @media (max-width: 361px) {
+        .header-planning {
+            display: none;
         }
     }
 
@@ -81,6 +116,8 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+
+
 
             .filter-inputs-search {
                 width: 166px;
@@ -144,43 +181,7 @@
                 }
             }
 
-            .filter-inputs-program {
-                width: 166px;
-                height: 66px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
 
-
-                .filter-inputs-program__title {
-                    font-size: 10px;
-                    line-height: 12px;
-                    margin-bottom: 0px;
-                    margin-top: 0px;
-                    color: rgba(0, 0, 0, 0.54);
-
-                }
-
-                .filter-inputs-program-menu {
-                    color: rgba(0, 0, 0, 0.87);
-                    font-size: 12px;
-                    line-height: 16px;
-                    margin-bottom: 0px;
-                    margin-top: 0px;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-
-                    .filter-inputs-program-menu__title {
-                        width: 132px;
-                        height: 16px;
-                        margin-right: 16px;
-                        margin-bottom: 0px;
-                        margin-top: 0px;
-                        color: rgba(0, 0, 0, 0.87);
-                    }
-                }
-            }
 
             .filter-inputs-period {
                 width: 166px;
@@ -259,6 +260,28 @@
                     }
                 }
             }
+
+            @media (max-width:361px) {
+                .filter-inputs-program {
+                    display: none;
+                }
+
+                .filter-inputs-period {
+                    display: none;
+                }
+
+                .filter-inputs-status {
+                    display: none;
+                }
+
+                .filter-settings-tune__text {
+                    display: none;
+                }
+
+                .filter-settings-discard {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -332,6 +355,7 @@
 
         ul {
             list-style: none;
+            padding-left: 0px;
         }
 
 
@@ -402,7 +426,6 @@
         }
 
         .list-body {
-            padding-left: 0px;
 
             font-style: normal;
             font-weight: 500;
@@ -417,6 +440,7 @@
             .list-body-plan {
                 width: 1162px;
                 height: 36px;
+                margin-left: 122px;
 
                 font-weight: 500;
                 font-size: 12px;
@@ -470,7 +494,7 @@
                 .list-body-plan__progress {
                     width: 87px;
                     height: 36px;
-					margin-right: 73px;
+                    margin-right: 73px;
 
                     display: flex;
                     justify-content: flex-start;
@@ -479,12 +503,15 @@
 
                 .list-body-plan__options {
                     height: 8px;
-					padding: 8px;
+                    padding: 12px;
+                    color: rgba(0, 0, 0, 0.54);
 
                 }
             }
         }
     }
+
+
 
 
 }

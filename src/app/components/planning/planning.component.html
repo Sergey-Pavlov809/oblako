@@ -1,6 +1,7 @@
 <div>
 	<div class="header-scroll">
 		<img class="header-scroll__selector" src="./../../../assets/images/planning/menu.png" />
+		<p class="header-scroll__title">Обучение</p>
 		<img class="header-scroll__add" src="./../../../assets/images/planning/add_plan.png" />
 	</div>
 
@@ -64,18 +65,17 @@
 		</div>
 
 		<div class="list">
-			<ul class="list-title">
-				<li class="list-title__date">Дата начала</li>
-				<li class="list-title__title">Название</li>
-				<li class="list-title__participants">Участников</li>
-				<li class="list-title__trainer">Тренер</li>
-				<li class="list-title-progress">
-					<p class="list-title-progress__title">Прогресс</p>
-					<img class="list-title-progress__img" src="./../../../assets/images/planning/icon.png" alt="">
-				</li>
-			</ul>
-
 			<ul class="list-body">
+				<li class="list-title">
+					<div class="list-title__date">Дата начала</div>
+					<div class="list-title__title">Название</div>
+					<div class="list-title__participants">Участников</div>
+					<div class="list-title__trainer">Тренер</div>
+					<div class="list-title-progress">
+						<p class="list-title-progress__title">Прогресс</p>
+						<img class="list-title-progress__img" src="./../../../assets/images/planning/icon.png" alt="">
+					</div>
+				</li>
 				<li class="list-body-plan" *ngFor="let plan of data.plans">
 						<div class="list-body-plan__data">{{plan.date}}</div>
 						<div class="list-body-plan__title">{{plan.title}}</div>
